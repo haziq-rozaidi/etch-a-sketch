@@ -7,24 +7,27 @@
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="./scripts/index.js" defer></script>
 </head>
 <body class="page">
     <header class="page__head">
-        <h1>Etch A Sketch</h1>
+        <h1 class="heading heading_level_1 heading_text_center">Etch A Sketch</h1>
     </header>
     <main class="page__main">
         <div class="settings">
-            <input type="color">
-            <button type="button">Normal</button>
-            <button type="button">Rainbow</button>
-            <button type="button">Eraser</button>
-            <button type="button">Clear</button>
-            <div>
-                <input type="range" id="numOfSquares" name="numOfSquares" min="16" max="100" value="16">
+            <input class="settings__color" type="color">
+            <button class="btn btn_outline-dark btn_size_md" type="button">Normal</button>
+            <button class="btn btn_outline-dark btn_size_md" type="button">Rainbow</button>
+            <button class="btn btn_outline-dark btn_size_md" type="button">Eraser</button>
+            <button class="btn btn_outline-dark btn_size_md" type="button">Clear</button>
+            <div class="settings__slider">
+                <input class="settings__range" type="range" id="numOfSquares" name="numOfSquares" min="16" max="100" value="16">
                 <label for="numOfSquares">16 x 16</label>
             </div>
-            <button type="button">Apply</button>
+            <button class="btn btn_outline-dark btn_size_md" type="button">Apply</button>
         </div>
         <div class="grid"></div>
     </main>

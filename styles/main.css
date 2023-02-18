@@ -1,4 +1,6 @@
 .page {
+    font-family: Nunito, sans-serif;
+    background-color: #F8F9FA;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -9,6 +11,20 @@
     grid-column: 1 / -1;
 }
 
+.heading {
+    margin: 0;
+    color: #21252A;
+}
+
+.heading_level_1 {
+    font-size: 3rem;
+    margin: 2rem 0 0;
+}
+
+.heading_text_center {
+    text-align: center;
+}
+
 .page__main {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
@@ -16,12 +32,74 @@
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.grid {
+    width: 32rem;
+    height: 32rem;
+    border: 1px solid #ACB5BE;
+    background-color: #FFF;
+    grid-column: 2;
+    place-self: center;
+}
+
 .settings {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
 }
 
-.grid {
-    grid-column: 2;
+.settings__color {
+    width: 6rem;
+    height: 6rem;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.settings__color::-moz-color-swatch {
+    border: 0;
+}
+
+.settings__color::-webkit-color-swatch {
+    border: 0;
+}
+
+.settings__color::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.settings__slider {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.settings__range {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.btn_outline-dark {
+    border-color: #21252A;
+    background-color: transparent;
+    color: #21252A;
+}
+
+.btn_outline-dark:hover {
+    background-color: #21252A;
+    color: #F8F9FA;
+}
+
+.btn_size_md {
+    width: 16rem;
 }
