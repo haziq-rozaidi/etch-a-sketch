@@ -29,7 +29,10 @@
     grid-column: 1 / -1;
     grid-row: 2 / -1;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: max-content max-content;
+    column-gap: 4rem;
+    justify-content: center;
+    margin: 1.5rem 0 0;
 }
 
 .grid {
@@ -38,7 +41,6 @@
     border: 1px solid #ACB5BE;
     background-color: #FFF;
     grid-column: 2;
-    place-self: center;
 }
 
 .settings {
