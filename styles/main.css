@@ -41,6 +41,11 @@
     border: 1px solid #ACB5BE;
     background-color: #FFF;
     grid-column: 2;
+    display: grid;
+}
+
+.grid__item {
+    background-color: #FFF;
 }
 
 .settings {
