@@ -94,6 +94,7 @@
     border-radius: 0.375rem;
     border-style: solid;
     border-width: 1px;
+    transition: 0.1s ease-in-out;
 }
 
 .btn_outline-dark {
@@ -102,7 +103,11 @@
     color: #21252A;
 }
 
-.btn_outline-dark:hover {
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn_active {
     background-color: #21252A;
     color: #F8F9FA;
 }
